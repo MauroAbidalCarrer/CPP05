@@ -3,6 +3,7 @@
 # include <iostream>
 # include <exception>
 # include <string>
+# include "Form.hpp"
 
 class Bureaucrat
 {
@@ -20,6 +21,8 @@ class Bureaucrat
     ~Bureaucrat();
     //overloads
     Bureaucrat& operator=(const Bureaucrat& other);
+    //methods
+    void signForm(Form& form) const;
     //accessors
     std::string getName() const;
     int getGrade() const;
@@ -29,12 +32,12 @@ class Bureaucrat
     //nested classes
     class GradeTooHighException : public std::exception
     {
-        public :
+        public:
         const char* what() const throw();
     };
     class GradeTooLowException : public std::exception
     {
-        public :
+        public:
         const char* what() const throw();
     };
 };
