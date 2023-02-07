@@ -23,8 +23,8 @@ int main()
 {
     RobotomyRequestForm robotomy = RobotomyRequestForm("an intern");
     testForm("RobotomyRequestForm", robotomy);
-    // ShrubberyCreationForm creation = ShrubberyCreationForm("superGardenForm");
-    // testForm("ShrubberyCreationForm", creation);
-    // PresidentialPardonForm pardon = PresidentialPardonForm("the same intern");
-    // testForm("PresidentialPardonForm", pardon);
+    ShrubberyCreationForm creation = ShrubberyCreationForm("superGardenForm");
+    testForm("ShrubberyCreationForm", creation);
+    PresidentialPardonForm pardon = PresidentialPardonForm("the same intern");
+    testForm("PresidentialPardonForm", pardon);
 }
