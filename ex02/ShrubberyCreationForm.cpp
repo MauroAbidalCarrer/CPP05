@@ -6,7 +6,7 @@
 
 //constructors and destructors
 ShrubberyCreationForm::ShrubberyCreationForm() : Form(145, 137, "", "") {}
-ShrubberyCreationForm::ShrubberyCreationForm(std::string name, std::string target) : Form(145, 137, name, target) {}
+ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form(145, 137, "ShrubberyCreationForm", target) {}
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& other) : Form(other) {}
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
 //overloads

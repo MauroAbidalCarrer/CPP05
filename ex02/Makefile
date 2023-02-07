@@ -21,7 +21,7 @@ clean:
 	rm -f $(OBJS) $(DEPS) 
 
 fclean: clean
-	rm -f $(NAME) superGardenFile_shrubbery
+	rm -f $(NAME) superGardenForm_shrubbery
 
 re:	fclean all
 

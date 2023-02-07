@@ -5,7 +5,7 @@
 
 //constructors and destructors
 RobotomyRequestForm::RobotomyRequestForm() : Form(72, 45, "", "") {}
-RobotomyRequestForm::RobotomyRequestForm(std::string name, std::string target) : Form(72, 45, name, target) {}
+RobotomyRequestForm::RobotomyRequestForm(std::string target) : Form(72, 45, "RobotomyRequestForm", target) {}
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& other) : Form(other) {}
 RobotomyRequestForm::~RobotomyRequestForm() {}
 //overloads
@@ -18,6 +18,7 @@ RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm& r
 void RobotomyRequestForm::executeInternal() const
 {
     std::cout << "*DRILL NOISES*" << std::endl;
+    std::srand((unsigned int)time(NULL));
     std::string negation = rand() % 2 != 0 ? "" : "not ";
-    std::cout << getTarget() << " has " << negation << "been robotomized";
+    std::cout << getTarget() << " has " << negation << "been robotomized" << std::endl;
 }

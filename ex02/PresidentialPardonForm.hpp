@@ -10,7 +10,7 @@ class PresidentialPardonForm : public Form
     //constructors and destructors
     PresidentialPardonForm();
     PresidentialPardonForm(const PresidentialPardonForm& other);
-    PresidentialPardonForm(std::string name, std::string target);
+    PresidentialPardonForm(std::string target);
     ~PresidentialPardonForm();
     //overloads
     PresidentialPardonForm& operator=(const PresidentialPardonForm& rhs);

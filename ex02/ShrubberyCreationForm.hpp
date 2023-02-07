@@ -10,7 +10,7 @@ class ShrubberyCreationForm : public Form
     //constructors and destructors
     ShrubberyCreationForm();
     ShrubberyCreationForm(const ShrubberyCreationForm& other);
-    ShrubberyCreationForm(std::string name, std::string target);
+    ShrubberyCreationForm(std::string target);
     ~ShrubberyCreationForm();
     //overloads
     ShrubberyCreationForm& operator=(const ShrubberyCreationForm& rhs);

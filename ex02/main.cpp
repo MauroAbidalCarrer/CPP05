@@ -21,10 +21,10 @@ void testForm(std::string title, Form& form)
 
 int main()
 {
-    RobotomyRequestForm robotomy = RobotomyRequestForm("an intern", "RobotomyRequestForm");
+    RobotomyRequestForm robotomy = RobotomyRequestForm("an intern");
     testForm("RobotomyRequestForm", robotomy);
-    ShrubberyCreationForm creation = ShrubberyCreationForm("superGardenForm", "superGardenFile");
-    testForm("ShrubberyCreationForm", creation);
-    PresidentialPardonForm pardon = PresidentialPardonForm("the same intern", "superGardenFile");
-    testForm("PresidentialPardonForm", pardon);
+    // ShrubberyCreationForm creation = ShrubberyCreationForm("superGardenForm");
+    // testForm("ShrubberyCreationForm", creation);
+    // PresidentialPardonForm pardon = PresidentialPardonForm("the same intern");
+    // testForm("PresidentialPardonForm", pardon);
 }

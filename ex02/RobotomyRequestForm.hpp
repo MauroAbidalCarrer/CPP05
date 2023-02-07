@@ -10,7 +10,7 @@ class RobotomyRequestForm : public Form
     //constructors and destructors
     RobotomyRequestForm();
     RobotomyRequestForm(const RobotomyRequestForm& other);
-    RobotomyRequestForm(std::string name, std::string target);
+    RobotomyRequestForm(std::string target);
     ~RobotomyRequestForm();
     //overloads
     RobotomyRequestForm& operator=(const RobotomyRequestForm& rhs);
