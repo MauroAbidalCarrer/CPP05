@@ -44,7 +44,7 @@ void Bureaucrat::executeForm(Form const & form) const
     }
     catch(const std::exception & e)
     {
-        std::cerr << name << ", couldn’t sign " << form.getName() << " beacuse: " << e.what();
+        std::cerr << name << ", couldn’t execute " << form.getName() << " beacuse: " << e.what();
     }
 }
 //accessors
