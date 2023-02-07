@@ -16,5 +16,6 @@ class RobotomyRequestForm : public Form
     RobotomyRequestForm& operator=(const RobotomyRequestForm& rhs);
     //methods
     void executeInternal() const;
+    static Form* makeForm(std::string target);
 };
 #endif

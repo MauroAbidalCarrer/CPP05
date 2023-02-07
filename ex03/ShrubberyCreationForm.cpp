@@ -38,3 +38,7 @@ void ShrubberyCreationForm::executeInternal() const
     else
         std::cerr << "could not create " << dstFileName << std::endl;
 }
+Form* ShrubberyCreationForm::makeForm(std::string target)
+{
+    return new ShrubberyCreationForm(target);
+}

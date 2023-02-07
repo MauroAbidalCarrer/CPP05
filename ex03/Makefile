@@ -4,6 +4,8 @@ NAME	:= Bureaucrats
 SRCS	:= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 OBJS	:= $(SRCS:.cpp=.o)
 
+GARDENS := 'an intern_shrubbery' 'the same intern_shrubbery' superGardenForm_shrubbery
+
 DEPS	=	$(OBJS:.o=.d)
 
 CXX	:= c++
@@ -21,7 +23,7 @@ clean:
 	rm -f $(OBJS) $(DEPS) 
 
 fclean: clean
-	rm -f $(NAME) superGardenForm_shrubbery
+	rm -f $(NAME) $(GARDENS)
 
 re:	fclean all
 

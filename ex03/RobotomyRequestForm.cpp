@@ -22,3 +22,7 @@ void RobotomyRequestForm::executeInternal() const
     std::string negation = rand() % 2 != 0 ? "" : "not ";
     std::cout << getTarget() << " has " << negation << "been robotomized" << std::endl;
 }
+Form* RobotomyRequestForm::makeForm(std::string target)
+{
+    return new RobotomyRequestForm(target);
+}

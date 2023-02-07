@@ -16,5 +16,6 @@ class PresidentialPardonForm : public Form
     PresidentialPardonForm& operator=(const PresidentialPardonForm& rhs);
     //methods
     void executeInternal() const;
+    static Form* makeForm(std::string target);
 };
 #endif

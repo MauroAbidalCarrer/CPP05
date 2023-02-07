@@ -16,5 +16,6 @@ class ShrubberyCreationForm : public Form
     ShrubberyCreationForm& operator=(const ShrubberyCreationForm& rhs);
     //methods
     void executeInternal() const;
+    static Form* makeForm(std::string target);
 };
 #endif

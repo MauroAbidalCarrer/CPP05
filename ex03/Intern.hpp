@@ -7,7 +7,6 @@
 class Intern
 {
     private:
-    int	formFinder(std::string name) const;
     public:
     //constructors and destructors
     Intern();

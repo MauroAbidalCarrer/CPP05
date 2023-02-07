@@ -18,3 +18,7 @@ void PresidentialPardonForm::executeInternal() const
 {
     std::cout << getTarget() << " has been forgiven by Zaphod Beeblebrox." << std::endl;
 }
+Form* PresidentialPardonForm::makeForm(std::string target)
+{
+    return new PresidentialPardonForm(target);
+}
